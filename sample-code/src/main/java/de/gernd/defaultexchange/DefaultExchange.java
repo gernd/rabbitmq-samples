@@ -28,6 +28,9 @@ public class DefaultExchange {
                 (channel), 0, 5, TimeUnit.SECONDS);
 
         // set up message consumption for test queue
+        // messages for direct exchanges (as e.g. the default exchange) are load balanced
+        // amongst consumers and not queues. if we had an additional consumer here,
+        // the messages would be delivered in a round-robin manner
         Consumer messageConsumer = new DefaultConsumer(channel) {
 
             @Override
