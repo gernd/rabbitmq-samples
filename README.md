@@ -1,5 +1,6 @@
 # rabbitmq-samples
 Sample code for developing with RabbitMQ
+
 Use the shell script in the project root to start a rabbitmq instance running in a docker container
 
 ## Links
