@@ -1,6 +1,6 @@
 package de.gernd.defaultexchange;
 
-import com.rabbitmq.client.*;
+import com.rabbitmq.client.Channel;
 
 import java.io.IOException;
 import java.util.Random;
