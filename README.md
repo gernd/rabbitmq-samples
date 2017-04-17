@@ -4,5 +4,7 @@ Use the shell script in the project root to start a rabbitmq instance running in
 
 ## Links
 [Docker image used for testing](https://hub.docker.com/_/rabbitmq/) 
+
 [RabbitMQ Tutorials](http://www.rabbitmq.com/getstarted.html)
+
 [AMQP concepts](http://www.rabbitmq.com/tutorials/amqp-concepts.html)
