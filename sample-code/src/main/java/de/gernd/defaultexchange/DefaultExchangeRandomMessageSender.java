@@ -7,13 +7,13 @@ import java.util.Random;
 
 import static de.gernd.defaultexchange.DefaultExchange.QUEUE_NAME;
 
-public class RandomMessageSender implements Runnable {
+public class DefaultExchangeRandomMessageSender implements Runnable {
 
     private final Channel channel;
 
     private final Random random = new Random();
 
-    public RandomMessageSender(Channel channel) {
+    public DefaultExchangeRandomMessageSender(Channel channel) {
         this.channel = channel;
     }
 

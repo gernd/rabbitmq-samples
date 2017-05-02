@@ -24,7 +24,7 @@ public class DefaultExchange {
         channel.queueDeclare(QUEUE_NAME, false, false, false, null);
 
         // start sending random messages
-        Executors.newSingleThreadScheduledExecutor().scheduleAtFixedRate(new RandomMessageSender
+        Executors.newSingleThreadScheduledExecutor().scheduleAtFixedRate(new DefaultExchangeRandomMessageSender
                 (channel), 0, 5, TimeUnit.SECONDS);
 
         // set up message consumption for test queue
