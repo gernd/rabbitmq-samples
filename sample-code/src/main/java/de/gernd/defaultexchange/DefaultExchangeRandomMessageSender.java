@@ -5,7 +5,7 @@ import com.rabbitmq.client.Channel;
 import java.io.IOException;
 import java.util.Random;
 
-import static de.gernd.defaultexchange.DefaultExchange.QUEUE_NAME;
+import static de.gernd.defaultexchange.DefaultExchangeDemo.QUEUE_NAME;
 
 public class DefaultExchangeRandomMessageSender implements Runnable {
 
