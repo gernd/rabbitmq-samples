@@ -11,8 +11,10 @@ public class DefaultExchange {
 
     public static final String QUEUE_NAME = "defaultExchangeQueue";
 
+    /**
+     * continuously sends messages using the default exchange
+     */
     public static void main(String[] args) throws IOException, TimeoutException, InterruptedException {
-        System.out.println("Continously sending messages until ENTER is pressed");
 
         // set up sending connection to rabbitmq broker
         ConnectionFactory factory = new ConnectionFactory();
@@ -43,13 +45,5 @@ public class DefaultExchange {
 
         };
         channel.basicConsume(QUEUE_NAME, true, messageConsumer);
-
-        // wait until user presses ENTER
-        System.in.read();
-
-        // close send channel and connection
-        System.out.println("Shutting down");
-        channel.close();
-        rabbitMqConnection.close();
     }
 }
