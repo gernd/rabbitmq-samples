@@ -2,6 +2,12 @@
 Sample code for developing with RabbitMQ
 
 Use the shell script in the project root to start a rabbitmq instance running in a docker container
+The rabbitmq management console is then available on localhost:8080
+
+## Sample Code
+Samples are provided for
+- using the Default Exchange
+- using the Direct Exchange
 
 ## Links
 [Docker image used for testing](https://hub.docker.com/_/rabbitmq/) 
