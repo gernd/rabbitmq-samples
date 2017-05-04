@@ -9,6 +9,7 @@ Samples are provided for
 - using a Default Exchange
 - using a Direct Exchange
 - using a Fanout Exchange
+TODO: Header Exchange, Topic Exchange
 
 ## Links
 [Docker image used for testing](https://hub.docker.com/_/rabbitmq/) 
