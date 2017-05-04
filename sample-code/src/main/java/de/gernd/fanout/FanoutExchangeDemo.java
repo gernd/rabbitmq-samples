@@ -33,7 +33,7 @@ public class FanoutExchangeDemo {
         channel.queueBind(firstQueueName, FANOUT_EXCHANGE_NAME, "");
         channel.queueBind(secondQueueName, FANOUT_EXCHANGE_NAME, "");
 
-        // start sending random messages to the direct exchange
+        // start sending random messages to the fanout exchange
         Executors.newSingleThreadScheduledExecutor().scheduleAtFixedRate(new FanoutExchangeRandomMessageSender(channel),
                 0, 5, TimeUnit.SECONDS);
 
