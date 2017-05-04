@@ -6,8 +6,9 @@ The rabbitmq management console is then available on localhost:8080
 
 ## Sample Code
 Samples are provided for
-- using the Default Exchange
-- using the Direct Exchange
+- using a Default Exchange
+- using a Direct Exchange
+- using a Fanout Exchange
 
 ## Links
 [Docker image used for testing](https://hub.docker.com/_/rabbitmq/) 
