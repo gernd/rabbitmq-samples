@@ -1,0 +1,13 @@
+version: '2'
+services:
+    # rabbitmq instance used for code samples
+    rabbitmq-samples-instance:
+        hostname: rabbitmq-samples-instance
+        labels:
+            name: rabbitmq-samples-instance
+        image: rabbitmq:3-management
+        ports:
+          - "8080:15672"
+          - "5672:5672"
+
+
