@@ -1,6 +1,8 @@
 # rabbitmq-samples
 Sample code for developing with RabbitMQ
+
 use `docker-compose up` to start the rabbitmq instance
+
 The rabbitmq management console is then available on localhost:8080
 
 ## Sample Code
